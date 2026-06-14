@@ -1,0 +1,16 @@
+[package]
+name = "solana-stablecoin"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-program = "1.18"
+spl-token = "4.0"
+spl-token-2022 = "0.8"
+
+[lib]
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "deploy"
+path = "src/deploy.rs"
